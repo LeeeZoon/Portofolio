@@ -10,9 +10,11 @@ body {
   min-height: 100vh;
   color: #fff;
 }
+
 body::-webkit-scrollbar {
   display: none;
 }
+
 .splash-screen {
   position: fixed;
   top: 0;
@@ -81,12 +83,14 @@ body::-webkit-scrollbar {
 }
 
 @keyframes bounce {
+
   0%,
   80%,
   100% {
     transform: scale(0);
     opacity: 0.5;
   }
+
   40% {
     transform: scale(1);
     opacity: 1;
@@ -98,11 +102,13 @@ body::-webkit-scrollbar {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 .skip-btn {
   position: absolute;
   bottom: 40px;
@@ -124,6 +130,7 @@ body::-webkit-scrollbar {
   border-color: rgba(167, 139, 250, 0.6);
   transform: translateY(-2px);
 }
+
 nav {
   position: fixed;
   top: 0;
@@ -140,6 +147,7 @@ nav {
   transition: all 0.3s ease;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+
 .logo {
   position: relative;
   color: #b69ffc;
@@ -148,6 +156,7 @@ nav {
   transition: color 0.3s;
   text-decoration: none;
 }
+
 .logo a {
   text-decoration: none;
   font-size: 20px;
@@ -155,15 +164,18 @@ nav {
   font-weight: 600px;
   transition: color 0.5s ease;
 }
+
 .logo a:hover {
   color: #ffffff;
   transition: all 0.5s ease;
 }
+
 .nav-links {
   display: flex;
   gap: 30px;
   list-style: none;
 }
+
 .nav-links li a {
   position: relative;
   color: #b69ffc;
@@ -171,29 +183,35 @@ nav {
   font-weight: bold;
   transition: color 0.3s;
 }
+
 .nav-links li a:hover {
   color: white;
   transition: all 0.3s ease;
 }
+
 .reveal {
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
+
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
+
 .reveal-animation {
   animation: appearFromLeft 5s linear;
   animation-range: entry 0% cover 40%;
   animation-timeline: view();
 }
+
 @keyframes appearFromLeft {
   from {
     opacity: 0;
     transform: translateX(-500px) scale(1);
   }
+
   to {
     opacity: 1;
     transform: translateX(0) scale(1);
@@ -212,6 +230,7 @@ nav {
   transform: translateX(-50%);
   border-radius: 2px;
 }
+
 .nav-links li a:hover::after {
   width: 100%;
 }
@@ -225,6 +244,7 @@ nav {
   gap: 50px;
   align-items: center;
 }
+
 .left-section {
   animation: slideInLeft 0.8s ease-out;
 }
@@ -237,15 +257,18 @@ h1 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
 .description {
   line-height: 1.8;
   margin-bottom: 10px;
   opacity: 0.9;
 }
+
 .buttons {
   display: flex;
   gap: 20px;
 }
+
 .btn {
   padding: 12px 30px;
   border: none;
@@ -256,18 +279,22 @@ h1 {
   text-decoration: none;
   display: inline-block;
 }
+
 .btn-primary {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #fff;
 }
+
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
 }
+
 .profile-card {
   background: linear-gradient(90deg, #764ba2 0%, #667eea 100%);
   color: #fff;
 }
+
 .profile-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 50px rgba(102, 126, 234, 0.4);
@@ -278,21 +305,21 @@ h1 {
   justify-content: center;
   animation: slideInRight 0.8s ease-out;
 }
+
 .profile-card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* teks turun ke bawah */
+  justify-content: flex-end;
+  /* teks turun ke bawah */
   align-items: center;
   border-radius: 30px;
   height: 500px;
   text-align: center;
   padding: 40px;
-  background-image: linear-gradient(
-      180deg,
+  background-image: linear-gradient(180deg,
       rgba(17, 37, 170, 0.268),
-      rgba(1, 34, 251, 0.612)
-    ),
-    url("assets/img/1896961e-aa35-4df9-a0af-8f375c134f0a.jpeg");
+      rgba(1, 34, 251, 0.612)),
+    url("assets/img/Rehan\ Zulhilmi\ Budiman\ \(2\).png");
   background-size: cover;
   background-position: center;
   color: white;
@@ -312,6 +339,7 @@ h1 {
   max-width: 1200px;
   margin: 50px auto;
 }
+
 .section-card {
   background: rgba(255, 255, 255, 0.05);
   border: 2px solid rgba(167, 139, 250, 0.2);
@@ -330,6 +358,7 @@ h1 {
   text-align: center;
   margin: auto;
 }
+
 .projects-wrapper {
   animation: slideInLeft 0.5 ease-in;
   display: flex;
@@ -342,15 +371,18 @@ h1 {
   padding-bottom: 20px;
   height: 250px;
 }
+
 .projects-wrapper::-webkit-scrollbar {
   display: none;
 }
 
 .project-showcase {
-  position: relative; /* penting supaya .overlay-text nempel di dalam sini */
+  position: relative;
+  /* penting supaya .overlay-text nempel di dalam sini */
   flex-shrink: 0;
   display: inline-block;
 }
+
 .overlay-text {
   position: absolute;
   bottom: 15px;
@@ -418,6 +450,7 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
 .about-content {
   border: 2px solid rgba(167, 139, 250, 0.2);
   display: flex;
@@ -450,6 +483,7 @@ h1 {
   cursor: pointer;
   gap: 5px;
 }
+
 .menu-toggle span {
   width: 25px;
   height: 3px;
@@ -615,6 +649,7 @@ h1 {
   text-decoration: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
+
 .email-text {
   font-size: 18px;
   font-weight: 500;
@@ -622,6 +657,7 @@ h1 {
   text-decoration: none;
   display: flex;
 }
+
 .email-text:hover {
   color: #ffffff;
 }
@@ -675,16 +711,19 @@ h1 {
     opacity: 0;
     transform: translateX(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
   }
 }
+
 @keyframes slideInRight {
   from {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -695,9 +734,11 @@ h1 {
   .splash-logo {
     font-size: 56px;
   }
+
   .splash-subtitle {
     font-size: 18px;
   }
+
   .skip-btn {
     bottom: 20px;
     right: 20px;
@@ -705,13 +746,16 @@ h1 {
     font-size: 13px;
   }
 }
+
 @media (max-width: 768px) {
   nav {
     padding: 20px;
   }
+
   .menu-toggle {
     display: flex;
   }
+
   .nav-links {
     position: absolute;
     top: 100%;
@@ -726,48 +770,60 @@ h1 {
     pointer-events: none;
     transition: all 0.3s ease;
   }
+
   .nav-links.active {
     transform: translateY(0);
     opacity: 1;
     pointer-events: all;
   }
+
   .container {
     grid-template-columns: 1fr;
     padding: 30px 20px;
     gap: 40px;
   }
+
   h1 {
     font-size: 32px;
   }
+
   .description {
     font-size: 16px;
   }
+
   .buttons {
     flex-direction: column;
   }
+
   .right-section {
     margin: 0;
   }
+
   .profile-card {
     max-width: 100%;
     padding: 30px;
     min-height: 320px;
   }
+
   .profile-card hover {
     box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
     background: rgba(255, 255, 255, 0.15);
   }
+
   .profile-header h2 {
     font-size: 28px;
   }
+
   .section-card,
   .about-me {
     padding: 30px 20px;
   }
+
   .section-card h2,
   .about-me h2 {
     font-size: 28px;
   }
+
   .project-images {
     grid-template-columns: 1fr;
     gap: 15px;
